@@ -1,0 +1,6 @@
+framework module Pods_LobbiTests {
+  umbrella header "Pods-LobbiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

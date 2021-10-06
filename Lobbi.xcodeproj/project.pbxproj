@@ -18,6 +18,10 @@
 		718BB125270DF7C1008802B7 /* LobbiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB124270DF7C1008802B7 /* LobbiTests.swift */; };
 		718BB12F270DF7C1008802B7 /* LobbiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB12E270DF7C1008802B7 /* LobbiUITests.swift */; };
 		718BB131270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB130270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift */; };
+		718BB145270E125A008802B7 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB144270E125A008802B7 /* ViewController+Extension.swift */; };
+		718BB147270E281B008802B7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB146270E281B008802B7 /* TabBarController.swift */; };
+		718BB149270E39C5008802B7 /* TabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB148270E39C5008802B7 /* TabBarController+Extension.swift */; };
+		718BB14B270E3CAA008802B7 /* Shared+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB14A270E3CAA008802B7 /* Shared+Extension.swift */; };
 		89C1FC348A06722572C490D5 /* Pods_Lobbi_LobbiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4A2190F27AEFA457D78715 /* Pods_Lobbi_LobbiUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,10 @@
 		718BB12A270DF7C1008802B7 /* LobbiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LobbiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		718BB12E270DF7C1008802B7 /* LobbiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbiUITests.swift; sourceTree = "<group>"; };
 		718BB130270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		718BB144270E125A008802B7 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		718BB146270E281B008802B7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		718BB148270E39C5008802B7 /* TabBarController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBarController+Extension.swift"; sourceTree = "<group>"; };
+		718BB14A270E3CAA008802B7 /* Shared+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shared+Extension.swift"; sourceTree = "<group>"; };
 		98BA819907FA8876247653D2 /* Pods-LobbiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LobbiTests.debug.xcconfig"; path = "Target Support Files/Pods-LobbiTests/Pods-LobbiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2882CF5D0A4026223DA771 /* Pods-LobbiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LobbiTests.release.xcconfig"; path = "Target Support Files/Pods-LobbiTests/Pods-LobbiTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA197D7BE74D7EEFFA43F1B7 /* Pods-Lobbi-LobbiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi-LobbiUITests.release.xcconfig"; path = "Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +134,7 @@
 		718BB109270DF7BF008802B7 /* Lobbi */ = {
 			isa = PBXGroup;
 			children = (
+				718BB143270E0EEF008802B7 /* Extensions */,
 				718BB140270E016A008802B7 /* Model */,
 				718BB141270E018D008802B7 /* Network */,
 				718BB142270E01E5008802B7 /* Shared */,
@@ -155,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				718BB10E270DF7BF008802B7 /* ViewController.swift */,
+				718BB146270E281B008802B7 /* TabBarController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -184,6 +194,16 @@
 				718BB113270DF7BF008802B7 /* Lobbi.xcdatamodeld */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		718BB143270E0EEF008802B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				718BB144270E125A008802B7 /* ViewController+Extension.swift */,
+				718BB148270E39C5008802B7 /* TabBarController+Extension.swift */,
+				718BB14A270E3CAA008802B7 /* Shared+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E257FD1CBAD28E56FC175BF3 /* Pods */ = {
@@ -419,9 +439,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718BB14B270E3CAA008802B7 /* Shared+Extension.swift in Sources */,
 				718BB10F270DF7BF008802B7 /* ViewController.swift in Sources */,
 				718BB10B270DF7BF008802B7 /* AppDelegate.swift in Sources */,
+				718BB149270E39C5008802B7 /* TabBarController+Extension.swift in Sources */,
 				718BB115270DF7BF008802B7 /* Lobbi.xcdatamodeld in Sources */,
+				718BB147270E281B008802B7 /* TabBarController.swift in Sources */,
+				718BB145270E125A008802B7 /* ViewController+Extension.swift in Sources */,
 				718BB10D270DF7BF008802B7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

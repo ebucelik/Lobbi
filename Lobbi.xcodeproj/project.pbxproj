@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6198999AC1EDAAE3B3370D3B /* Pods_Lobbi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EE1228467F20FD78F14F03 /* Pods_Lobbi.framework */; };
+		70474DDA69F1A384576205B0 /* Pods_LobbiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39031102B1ABE2BDA867CBC9 /* Pods_LobbiTests.framework */; };
+		718BB10B270DF7BF008802B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB10A270DF7BF008802B7 /* AppDelegate.swift */; };
+		718BB10D270DF7BF008802B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB10C270DF7BF008802B7 /* SceneDelegate.swift */; };
+		718BB10F270DF7BF008802B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB10E270DF7BF008802B7 /* ViewController.swift */; };
+		718BB115270DF7BF008802B7 /* Lobbi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 718BB113270DF7BF008802B7 /* Lobbi.xcdatamodeld */; };
+		718BB117270DF7C0008802B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718BB116270DF7C0008802B7 /* Assets.xcassets */; };
+		718BB11A270DF7C0008802B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718BB118270DF7C0008802B7 /* LaunchScreen.storyboard */; };
+		718BB125270DF7C1008802B7 /* LobbiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB124270DF7C1008802B7 /* LobbiTests.swift */; };
+		718BB12F270DF7C1008802B7 /* LobbiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB12E270DF7C1008802B7 /* LobbiUITests.swift */; };
+		718BB131270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB130270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift */; };
+		89C1FC348A06722572C490D5 /* Pods_Lobbi_LobbiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4A2190F27AEFA457D78715 /* Pods_Lobbi_LobbiUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		718BB121270DF7C0008802B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718BB0FF270DF7BF008802B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718BB106270DF7BF008802B7;
+			remoteInfo = Lobbi;
+		};
+		718BB12B270DF7C1008802B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718BB0FF270DF7BF008802B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718BB106270DF7BF008802B7;
+			remoteInfo = Lobbi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BB4C5D73B3C806779DC417C /* Pods-Lobbi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi.release.xcconfig"; path = "Target Support Files/Pods-Lobbi/Pods-Lobbi.release.xcconfig"; sourceTree = "<group>"; };
+		2C4A2190F27AEFA457D78715 /* Pods_Lobbi_LobbiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lobbi_LobbiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39031102B1ABE2BDA867CBC9 /* Pods_LobbiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LobbiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EE1228467F20FD78F14F03 /* Pods_Lobbi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lobbi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D02FAFBC8E972A38018F63 /* Pods-Lobbi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi.debug.xcconfig"; path = "Target Support Files/Pods-Lobbi/Pods-Lobbi.debug.xcconfig"; sourceTree = "<group>"; };
+		6F40B186073B138B44E7E501 /* Pods-Lobbi-LobbiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi-LobbiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		718BB107270DF7BF008802B7 /* Lobbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lobbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718BB10A270DF7BF008802B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		718BB10C270DF7BF008802B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		718BB10E270DF7BF008802B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		718BB114270DF7BF008802B7 /* Lobbi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lobbi.xcdatamodel; sourceTree = "<group>"; };
+		718BB116270DF7C0008802B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		718BB119270DF7C0008802B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		718BB11B270DF7C0008802B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		718BB120270DF7C0008802B7 /* LobbiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LobbiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718BB124270DF7C1008802B7 /* LobbiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbiTests.swift; sourceTree = "<group>"; };
+		718BB12A270DF7C1008802B7 /* LobbiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LobbiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718BB12E270DF7C1008802B7 /* LobbiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbiUITests.swift; sourceTree = "<group>"; };
+		718BB130270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98BA819907FA8876247653D2 /* Pods-LobbiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LobbiTests.debug.xcconfig"; path = "Target Support Files/Pods-LobbiTests/Pods-LobbiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F2882CF5D0A4026223DA771 /* Pods-LobbiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LobbiTests.release.xcconfig"; path = "Target Support Files/Pods-LobbiTests/Pods-LobbiTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA197D7BE74D7EEFFA43F1B7 /* Pods-Lobbi-LobbiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi-LobbiUITests.release.xcconfig"; path = "Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718BB104270DF7BF008802B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6198999AC1EDAAE3B3370D3B /* Pods_Lobbi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BB11D270DF7C0008802B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70474DDA69F1A384576205B0 /* Pods_LobbiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BB127270DF7C1008802B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C1FC348A06722572C490D5 /* Pods_Lobbi_LobbiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037B28AA2738CA4F45E37DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44EE1228467F20FD78F14F03 /* Pods_Lobbi.framework */,
+				2C4A2190F27AEFA457D78715 /* Pods_Lobbi_LobbiUITests.framework */,
+				39031102B1ABE2BDA867CBC9 /* Pods_LobbiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		718BB0FE270DF7BF008802B7 = {
+			isa = PBXGroup;
+			children = (
+				718BB109270DF7BF008802B7 /* Lobbi */,
+				718BB123270DF7C0008802B7 /* LobbiTests */,
+				718BB12D270DF7C1008802B7 /* LobbiUITests */,
+				718BB108270DF7BF008802B7 /* Products */,
+				E257FD1CBAD28E56FC175BF3 /* Pods */,
+				037B28AA2738CA4F45E37DBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		718BB108270DF7BF008802B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				718BB107270DF7BF008802B7 /* Lobbi.app */,
+				718BB120270DF7C0008802B7 /* LobbiTests.xctest */,
+				718BB12A270DF7C1008802B7 /* LobbiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		718BB109270DF7BF008802B7 /* Lobbi */ = {
+			isa = PBXGroup;
+			children = (
+				718BB140270E016A008802B7 /* Model */,
+				718BB141270E018D008802B7 /* Network */,
+				718BB142270E01E5008802B7 /* Shared */,
+				718BB13F270E015C008802B7 /* ViewController */,
+			);
+			path = Lobbi;
+			sourceTree = "<group>";
+		};
+		718BB123270DF7C0008802B7 /* LobbiTests */ = {
+			isa = PBXGroup;
+			children = (
+				718BB124270DF7C1008802B7 /* LobbiTests.swift */,
+			);
+			path = LobbiTests;
+			sourceTree = "<group>";
+		};
+		718BB12D270DF7C1008802B7 /* LobbiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				718BB12E270DF7C1008802B7 /* LobbiUITests.swift */,
+				718BB130270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift */,
+			);
+			path = LobbiUITests;
+			sourceTree = "<group>";
+		};
+		718BB13F270E015C008802B7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				718BB10E270DF7BF008802B7 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		718BB140270E016A008802B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		718BB141270E018D008802B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		718BB142270E01E5008802B7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				718BB116270DF7C0008802B7 /* Assets.xcassets */,
+				718BB10A270DF7BF008802B7 /* AppDelegate.swift */,
+				718BB11B270DF7C0008802B7 /* Info.plist */,
+				718BB118270DF7C0008802B7 /* LaunchScreen.storyboard */,
+				718BB10C270DF7BF008802B7 /* SceneDelegate.swift */,
+				718BB113270DF7BF008802B7 /* Lobbi.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E257FD1CBAD28E56FC175BF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69D02FAFBC8E972A38018F63 /* Pods-Lobbi.debug.xcconfig */,
+				1BB4C5D73B3C806779DC417C /* Pods-Lobbi.release.xcconfig */,
+				6F40B186073B138B44E7E501 /* Pods-Lobbi-LobbiUITests.debug.xcconfig */,
+				EA197D7BE74D7EEFFA43F1B7 /* Pods-Lobbi-LobbiUITests.release.xcconfig */,
+				98BA819907FA8876247653D2 /* Pods-LobbiTests.debug.xcconfig */,
+				9F2882CF5D0A4026223DA771 /* Pods-LobbiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		718BB106270DF7BF008802B7 /* Lobbi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BB134270DF7C1008802B7 /* Build configuration list for PBXNativeTarget "Lobbi" */;
+			buildPhases = (
+				A19C860CF7BAC2DE225AFE06 /* [CP] Check Pods Manifest.lock */,
+				718BB103270DF7BF008802B7 /* Sources */,
+				718BB104270DF7BF008802B7 /* Frameworks */,
+				718BB105270DF7BF008802B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lobbi;
+			productName = Lobbi;
+			productReference = 718BB107270DF7BF008802B7 /* Lobbi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		718BB11F270DF7C0008802B7 /* LobbiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BB137270DF7C1008802B7 /* Build configuration list for PBXNativeTarget "LobbiTests" */;
+			buildPhases = (
+				C72952BDF9D8BF59585274A6 /* [CP] Check Pods Manifest.lock */,
+				718BB11C270DF7C0008802B7 /* Sources */,
+				718BB11D270DF7C0008802B7 /* Frameworks */,
+				718BB11E270DF7C0008802B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718BB122270DF7C0008802B7 /* PBXTargetDependency */,
+			);
+			name = LobbiTests;
+			productName = LobbiTests;
+			productReference = 718BB120270DF7C0008802B7 /* LobbiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		718BB129270DF7C1008802B7 /* LobbiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BB13A270DF7C1008802B7 /* Build configuration list for PBXNativeTarget "LobbiUITests" */;
+			buildPhases = (
+				B29518AC7C65130A3E2E56F7 /* [CP] Check Pods Manifest.lock */,
+				718BB126270DF7C1008802B7 /* Sources */,
+				718BB127270DF7C1008802B7 /* Frameworks */,
+				718BB128270DF7C1008802B7 /* Resources */,
+				C5B8C0918D5975E89D840290 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718BB12C270DF7C1008802B7 /* PBXTargetDependency */,
+			);
+			name = LobbiUITests;
+			productName = LobbiUITests;
+			productReference = 718BB12A270DF7C1008802B7 /* LobbiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		718BB0FF270DF7BF008802B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					718BB106270DF7BF008802B7 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					718BB11F270DF7C0008802B7 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 718BB106270DF7BF008802B7;
+					};
+					718BB129270DF7C1008802B7 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 718BB106270DF7BF008802B7;
+					};
+				};
+			};
+			buildConfigurationList = 718BB102270DF7BF008802B7 /* Build configuration list for PBXProject "Lobbi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 718BB0FE270DF7BF008802B7;
+			productRefGroup = 718BB108270DF7BF008802B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				718BB106270DF7BF008802B7 /* Lobbi */,
+				718BB11F270DF7C0008802B7 /* LobbiTests */,
+				718BB129270DF7C1008802B7 /* LobbiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		718BB105270DF7BF008802B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BB11A270DF7C0008802B7 /* LaunchScreen.storyboard in Resources */,
+				718BB117270DF7C0008802B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BB11E270DF7C0008802B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BB128270DF7C1008802B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A19C860CF7BAC2DE225AFE06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lobbi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29518AC7C65130A3E2E56F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lobbi-LobbiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B8C0918D5975E89D840290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72952BDF9D8BF59585274A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LobbiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		718BB103270DF7BF008802B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BB10F270DF7BF008802B7 /* ViewController.swift in Sources */,
+				718BB10B270DF7BF008802B7 /* AppDelegate.swift in Sources */,
+				718BB115270DF7BF008802B7 /* Lobbi.xcdatamodeld in Sources */,
+				718BB10D270DF7BF008802B7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BB11C270DF7C0008802B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BB125270DF7C1008802B7 /* LobbiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BB126270DF7C1008802B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BB12F270DF7C1008802B7 /* LobbiUITests.swift in Sources */,
+				718BB131270DF7C1008802B7 /* LobbiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		718BB122270DF7C0008802B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718BB106270DF7BF008802B7 /* Lobbi */;
+			targetProxy = 718BB121270DF7C0008802B7 /* PBXContainerItemProxy */;
+		};
+		718BB12C270DF7C1008802B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718BB106270DF7BF008802B7 /* Lobbi */;
+			targetProxy = 718BB12B270DF7C1008802B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		718BB118270DF7C0008802B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				718BB119270DF7C0008802B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		718BB132270DF7C1008802B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		718BB133270DF7C1008802B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		718BB135270DF7C1008802B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69D02FAFBC8E972A38018F63 /* Pods-Lobbi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UZH6B548Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lobbi/Shared/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeepEasy.Lobbi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		718BB136270DF7C1008802B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB4C5D73B3C806779DC417C /* Pods-Lobbi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UZH6B548Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lobbi/Shared/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeepEasy.Lobbi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		718BB138270DF7C1008802B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98BA819907FA8876247653D2 /* Pods-LobbiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UZH6B548Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeepEasy.LobbiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lobbi.app/Lobbi";
+			};
+			name = Debug;
+		};
+		718BB139270DF7C1008802B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F2882CF5D0A4026223DA771 /* Pods-LobbiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UZH6B548Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeepEasy.LobbiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lobbi.app/Lobbi";
+			};
+			name = Release;
+		};
+		718BB13B270DF7C1008802B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F40B186073B138B44E7E501 /* Pods-Lobbi-LobbiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UZH6B548Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeepEasy.LobbiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lobbi;
+			};
+			name = Debug;
+		};
+		718BB13C270DF7C1008802B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA197D7BE74D7EEFFA43F1B7 /* Pods-Lobbi-LobbiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UZH6B548Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeepEasy.LobbiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lobbi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		718BB102270DF7BF008802B7 /* Build configuration list for PBXProject "Lobbi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BB132270DF7C1008802B7 /* Debug */,
+				718BB133270DF7C1008802B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718BB134270DF7C1008802B7 /* Build configuration list for PBXNativeTarget "Lobbi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BB135270DF7C1008802B7 /* Debug */,
+				718BB136270DF7C1008802B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718BB137270DF7C1008802B7 /* Build configuration list for PBXNativeTarget "LobbiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BB138270DF7C1008802B7 /* Debug */,
+				718BB139270DF7C1008802B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718BB13A270DF7C1008802B7 /* Build configuration list for PBXNativeTarget "LobbiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718BB13B270DF7C1008802B7 /* Debug */,
+				718BB13C270DF7C1008802B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		718BB113270DF7BF008802B7 /* Lobbi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				718BB114270DF7BF008802B7 /* Lobbi.xcdatamodel */,
+			);
+			currentVersion = 718BB114270DF7BF008802B7 /* Lobbi.xcdatamodel */;
+			path = Lobbi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 718BB0FF270DF7BF008802B7 /* Project object */;
+}

@@ -19,7 +19,7 @@ class TabBarController: UITabBarController {
     private func setupViewControllers() {
         viewControllers = [
             createNavController(for: ViewController(), tabTitle: "Home", tabImage: UIImage(systemName: "house")!),
-            createNavController(for: ViewController(), tabTitle: "Account", tabImage: UIImage(systemName: "person")!)
+            createNavController(for: AccountViewController(), tabTitle: "Account", tabImage: UIImage(systemName: "person")!)
         ]
     }
     

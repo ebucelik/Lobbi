@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		6198999AC1EDAAE3B3370D3B /* Pods_Lobbi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EE1228467F20FD78F14F03 /* Pods_Lobbi.framework */; };
 		70474DDA69F1A384576205B0 /* Pods_LobbiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39031102B1ABE2BDA867CBC9 /* Pods_LobbiTests.framework */; };
+		711D58A5271C9B7400A14292 /* LobbiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D58A4271C9B7400A14292 /* LobbiCollectionViewCell.swift */; };
+		711D58A7271C9EEB00A14292 /* Lobbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D58A6271C9EEB00A14292 /* Lobbi.swift */; };
+		711D58A9271CB18000A14292 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D58A8271CB18000A14292 /* Account.swift */; };
+		711D58AB271CB37400A14292 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D58AA271CB37400A14292 /* AccountViewController.swift */; };
+		711D58AD271CB45600A14292 /* AccountViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D58AC271CB45600A14292 /* AccountViewController+Extension.swift */; };
 		718BB10B270DF7BF008802B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB10A270DF7BF008802B7 /* AppDelegate.swift */; };
 		718BB10D270DF7BF008802B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB10C270DF7BF008802B7 /* SceneDelegate.swift */; };
 		718BB10F270DF7BF008802B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BB10E270DF7BF008802B7 /* ViewController.swift */; };
@@ -49,6 +54,11 @@
 		44EE1228467F20FD78F14F03 /* Pods_Lobbi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lobbi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D02FAFBC8E972A38018F63 /* Pods-Lobbi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi.debug.xcconfig"; path = "Target Support Files/Pods-Lobbi/Pods-Lobbi.debug.xcconfig"; sourceTree = "<group>"; };
 		6F40B186073B138B44E7E501 /* Pods-Lobbi-LobbiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobbi-LobbiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lobbi-LobbiUITests/Pods-Lobbi-LobbiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		711D58A4271C9B7400A14292 /* LobbiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbiCollectionViewCell.swift; sourceTree = "<group>"; };
+		711D58A6271C9EEB00A14292 /* Lobbi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobbi.swift; sourceTree = "<group>"; };
+		711D58A8271CB18000A14292 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		711D58AA271CB37400A14292 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		711D58AC271CB45600A14292 /* AccountViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountViewController+Extension.swift"; sourceTree = "<group>"; };
 		718BB107270DF7BF008802B7 /* Lobbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lobbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718BB10A270DF7BF008802B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718BB10C270DF7BF008802B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		711D58A3271C9AF400A14292 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				711D58A4271C9B7400A14292 /* LobbiCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		718BB0FE270DF7BF008802B7 = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +152,12 @@
 		718BB109270DF7BF008802B7 /* Lobbi */ = {
 			isa = PBXGroup;
 			children = (
+				711D58A3271C9AF400A14292 /* Cells */,
 				718BB143270E0EEF008802B7 /* Extensions */,
-				718BB140270E016A008802B7 /* Model */,
+				718BB140270E016A008802B7 /*  Models */,
 				718BB141270E018D008802B7 /* Network */,
 				718BB142270E01E5008802B7 /* Shared */,
-				718BB13F270E015C008802B7 /* ViewController */,
+				718BB13F270E015C008802B7 /* ViewControllers */,
 			);
 			path = Lobbi;
 			sourceTree = "<group>";
@@ -160,20 +179,23 @@
 			path = LobbiUITests;
 			sourceTree = "<group>";
 		};
-		718BB13F270E015C008802B7 /* ViewController */ = {
+		718BB13F270E015C008802B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				718BB10E270DF7BF008802B7 /* ViewController.swift */,
 				718BB146270E281B008802B7 /* TabBarController.swift */,
+				711D58AA271CB37400A14292 /* AccountViewController.swift */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		718BB140270E016A008802B7 /* Model */ = {
+		718BB140270E016A008802B7 /*  Models */ = {
 			isa = PBXGroup;
 			children = (
+				711D58A6271C9EEB00A14292 /* Lobbi.swift */,
+				711D58A8271CB18000A14292 /* Account.swift */,
 			);
-			path = Model;
+			path = " Models";
 			sourceTree = "<group>";
 		};
 		718BB141270E018D008802B7 /* Network */ = {
@@ -202,6 +224,7 @@
 				718BB144270E125A008802B7 /* ViewController+Extension.swift */,
 				718BB148270E39C5008802B7 /* TabBarController+Extension.swift */,
 				718BB14A270E3CAA008802B7 /* Shared+Extension.swift */,
+				711D58AC271CB45600A14292 /* AccountViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -440,10 +463,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				718BB14B270E3CAA008802B7 /* Shared+Extension.swift in Sources */,
+				711D58AD271CB45600A14292 /* AccountViewController+Extension.swift in Sources */,
+				711D58A9271CB18000A14292 /* Account.swift in Sources */,
+				711D58AB271CB37400A14292 /* AccountViewController.swift in Sources */,
 				718BB10F270DF7BF008802B7 /* ViewController.swift in Sources */,
 				718BB10B270DF7BF008802B7 /* AppDelegate.swift in Sources */,
 				718BB149270E39C5008802B7 /* TabBarController+Extension.swift in Sources */,
+				711D58A5271C9B7400A14292 /* LobbiCollectionViewCell.swift in Sources */,
 				718BB115270DF7BF008802B7 /* Lobbi.xcdatamodeld in Sources */,
+				711D58A7271C9EEB00A14292 /* Lobbi.swift in Sources */,
 				718BB147270E281B008802B7 /* TabBarController.swift in Sources */,
 				718BB145270E125A008802B7 /* ViewController+Extension.swift in Sources */,
 				718BB10D270DF7BF008802B7 /* SceneDelegate.swift in Sources */,
